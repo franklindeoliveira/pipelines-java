@@ -1,4 +1,9 @@
 steps:
-- name: Step 1
-- name: Step 2
-- name: Step 3
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['compile']
+
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['test']
+
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['compile']
